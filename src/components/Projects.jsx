@@ -1,5 +1,5 @@
 import React from "react";
-import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
+import fitness from "../assets/portfolio/Fitness.jpg";
 import installNode from "../assets/portfolio/installNode.jpg";
 import navbar from "../assets/portfolio/navbar.jpg";
 import reactParallax from "../assets/portfolio/reactParallax.jpg";
@@ -10,28 +10,30 @@ const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
-      src: arrayDestruct,
+      src: fitness,
+      url : "https://main--fitnes-web.netlify.app/",
+      gitUrl : "https://github.com/Mohdniyam/Gym_Exercise_React"
     },
-    {
-      id: 2,
-      src: reactParallax,
-    },
-    {
-      id: 3,
-      src: navbar,
-    },
-    {
-      id: 4,
-      src: reactSmooth,
-    },
-    {
-      id: 5,
-      src: installNode,
-    },
-    {
-      id: 6,
-      src: reactWeather,
-    },
+    // {
+    //   id: 2,
+    //   src: reactParallax,
+    // },
+    // {
+    //   id: 3,
+    //   src: navbar,
+    // },
+    // {
+    //   id: 4,
+    //   src: reactSmooth,
+    // },
+    // {
+    //   id: 5,
+    //   src: installNode,
+    // },
+    // {
+    //   id: 6,
+    //   src: reactWeather,
+    // },
   ];
 
   return (
@@ -48,7 +50,7 @@ const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src }) => (
+          {portfolios.map(({ id, src, url, gitUrl }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
@@ -56,12 +58,21 @@ const Portfolio = () => {
                 className="rounded-md duration-200 hover:scale-105"
               />
               <div className="flex items-center justify-center">
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                <a
+                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                  href={url}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Demo
-                </button>
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                </a>
+                <a className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                href={gitUrl}
+                target="_blank"
+                rel="noreferrer"
+                >
                   Code
-                </button>
+                </a>
               </div>
             </div>
           ))}

@@ -14,10 +14,9 @@ const About = () => {
         </div>
 
         <p className="text-xl mt-20">
-          As a MERN Full Stack Developer, I craft seamless digital experiences
-          from concept to deployment. With expertise in MongoDB, Express.js,
+          As a MERN Full Stack Developer, I have a 1 year of experience. With expertise in MongoDB, Express.js,
           React.js, and Node.js, I build dynamic and responsive applications
-          that captivate users. From designing intuitive interfaces to
+          that better User Interface for users. From designing intuitive interfaces to
           architecting robust backend systems, I thrive in delivering end-to-end
           solutions. My passion for clean code, efficient databases, and fluid
           user interactions drives me to create web solutions that leave a
