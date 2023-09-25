@@ -14,26 +14,7 @@ const Portfolio = () => {
       url : "https://main--fitnes-web.netlify.app/",
       gitUrl : "https://github.com/Mohdniyam/Gym_Exercise_React"
     },
-    // {
-    //   id: 2,
-    //   src: reactParallax,
-    // },
-    // {
-    //   id: 3,
-    //   src: navbar,
-    // },
-    // {
-    //   id: 4,
-    //   src: reactSmooth,
-    // },
-    // {
-    //   id: 5,
-    //   src: installNode,
-    // },
-    // {
-    //   id: 6,
-    //   src: reactWeather,
-    // },
+
   ];
 
   return (
